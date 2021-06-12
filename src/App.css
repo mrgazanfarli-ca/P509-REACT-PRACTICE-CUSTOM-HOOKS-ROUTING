@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #FBFBF5;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,6 +26,89 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.email-input {
+  padding: 12px 12px;
+  border: 1px solid #999;
+  outline: none;
+  box-shadow: none;
+  border-radius: 4px;
+  font-size: 24px;
+  color: #555;
+  transition: border-color .2s;
+}
+
+.email-input:focus {
+  border-color: #C046CA;
+}
+
+.error-text {
+  color: #db3d22;
+  font-size: 14px;
+}
+
+.input-label {
+  color: #999;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+  font-size: 18px;
+  transition: .2s;
+  pointer-events: none;
+}
+
+.email-input:focus + .input-label, .email-input:valid + .input-label {
+  font-size: 14px;
+  top: 0;
+  background-color: white;
+  padding: 0 4px;
+}
+
+.custom-button {
+  box-shadow: none;
+  min-width: 128px;
+  background-color: #db2147;
+  border-radius: 8px;
+  width: 100%;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 12px;
+  outline: none;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.custom-button:active {
+  transform: translateY(5px);
+}
+
+.custom-button:disabled {
+  background-color: #e36f86;
+  cursor: not-allowed;
+}
+
+.email-input:focus + .input-label {
+  color: #C046CA;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  position: relative;
+}
+
+.mini-container {
+  border: 2px solid #477774;
+  padding: 40px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 @keyframes App-logo-spin {
